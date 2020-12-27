@@ -1,0 +1,12 @@
+2020-05-13 22:39:29.318 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 22:44:40.126 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 22:45:50.826 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 22:47:03.512 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 22:49:01.051 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 22:52:40.094 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 22:55:41.549 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 22:57:26.524 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 23:02:09.869 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 23:06:50.662 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 23:07:38.927 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-13 23:14:21.510 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.

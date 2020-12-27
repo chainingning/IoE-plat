@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>IOT管理平台</title>
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link th:href="@{../favicon.ico}" rel="stylesheet"/>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/css/jquery.contextMenu.min.css}" rel="stylesheet"/>
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link th:href="@{/css/animate.css}" rel="stylesheet"/>
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link th:href="@{/css/skins.css}" rel="stylesheet"/>
+    <link th:href="@{/iot/css/ry-ui.css}" rel="stylesheet"/>
+</head>
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow: hidden">
+<div id="wrapper">
+
+    <!--左侧导航开始-->
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="nav-close">
+            <i class="fa fa-times-circle"></i>
+        </div>
+        <a th:href="@{/index}">
+            <li class="logo hidden-xs">
+                <span class="logo-lg">IOT管理平台</span>
+            </li>
+        </a>
+        <div class="sidebar-collapse">
+            <ul class="nav" id="side-menu">
+                <li>
+                    <a href="#"><i class="fa fa-home"></i> <span class="nav-label">主页</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a class="menuItem" th:href="@{/system/main}">最新通知</a></li>
+                    </ul>
+                </li>
+                <li th:each="menu : ${menus}">
+                    <a th:class="@{${menu.url != '' && menu.url != '#'} ? ${menu.target}}" th:href="@{${menu.url == ''} ? |#| : ${menu.url}}">
+                        <i class="fa fa-bar-chart-o" th:class="${menu.icon}"></i>
+                        <span class="nav-label" th:text="${menu.menuName}">一级菜单</span>
+                        <span th:class="${menu.url == '' || menu.url == '#'} ? |fa arrow|"></span>
+                    </a>
+                    <ul class="nav nav-second-level collapse">
+                        <li th:each="cmenu : ${menu.children}">
+                            <a th:if="${#lists.isEmpty(cmenu.children)}" th:class="${cmenu.target == ''} ? |menuItem| : ${cmenu.target}" th:utext="${cmenu.menuName}" th:href="@{${cmenu.url}}">二级菜单</a>
+                            <a th:if="${not #lists.isEmpty(cmenu.children)}" href="#">[[${cmenu.menuName}]]<span class="fa arrow"></span></a>
+                            <ul th:if="${not #lists.isEmpty(cmenu.children)}" class="nav nav-third-level">
+                                <li th:each="emenu : ${cmenu.children}">
+                                    <a th:if="${#lists.isEmpty(emenu.children)}" th:class="${emenu.target == ''} ? |menuItem| : ${emenu.target}" th:text="${emenu.menuName}" th:href="@{${emenu.url}}">三级菜单</a>
+                                    <a th:if="${not #lists.isEmpty(emenu.children)}" href="#">[[${emenu.menuName}]]<span class="fa arrow"></span></a>
+                                    <ul th:if="${not #lists.isEmpty(emenu.children)}" class="nav nav-four-level">
+                                        <li th:each="fmenu : ${emenu.children}"><a th:if="${#lists.isEmpty(fmenu.children)}" th:class="${fmenu.target == ''} ? |menuItem| : ${fmenu.target}" th:text="${fmenu.menuName}" th:href="@{${fmenu.url}}">四级菜单</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--左侧导航结束-->
+</div>
+<!-- 全局js -->
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/plugins/metisMenu/jquery.metisMenu.js}"></script>
+<script th:src="@{/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
+<script th:src="@{/js/jquery.contextMenu.min.js}"></script>
+<script th:src="@{/libs/blockUI/jquery.blockUI.js}"></script>
+<script th:src="@{/libs/layer/layer.min.js}"></script>
+<script th:src="@{/iot/js/ry-ui.js}"></script>
+<script th:src="@{/iot/js/common.js}"></script>
+<script th:src="@{/iot/index.js}"></script>
+<script th:src="@{/libs/fullscreen/jquery.fullscreen.js}"></script>
+<script th:inline="javascript">
+    var ctx = [[@{
+        /}]];
+        var skin = storage.get("skin");
+// history（表示去掉地址的#）否则地址以"#"形式展示
+        var mode = "history";
+// 历史访问路径缓存
+        var historyPath = storage.get("historyPath");
+// 本地主题优先，未设置取系统配置
+        if ($.common.isNotEmpty(skin)) {
+            $("body").addClass(skin.split('|')[0]);
+            $("body").addClass(skin.split('|')[1]);
+        } else {
+            $("body").addClass([[${sideTheme}]]);
+            $("body").addClass([[${skinName}]]);
+        }
+
+        /** 刷新时访问路径页签 */
+        function applyPath(url) {
+            $('a[href$="' + decodeURI(url) + '"]').click();
+            $('a[href$="' + url + '"]').parent("li").addClass("selected").parents("li :not(.user-panel)").addClass("active").end().parents("ul").addClass("in");
+        }
+
+        /* 切换主题 */
+        function switchSkin() {
+            layer.open({
+                type: 2,
+                shadeClose: true,
+                title: "切换主题",
+                area: ["530px", "386px"],
+                content: [ctx + "system/switchSkin", 'no']
+            })
+        }
+
+        /** 刷新时访问路径页签 */
+        function applyPath(url) {
+            $('a[href$="' + decodeURI(url) + '"]').click();
+            $('a[href$="' + url + '"]').parent("li").addClass("selected").parents("li :not(.user-panel)").addClass("active").end().parents("ul").addClass("in");
+        }
+
+        $(function () {
+            if ($.common.equals("history", mode) && window.performance.navigation.type == 1) {
+                var url = storage.get('publicPath');
+                if ($.common.isNotEmpty(url)) {
+                    applyPath(url);
+                }
+            } else {
+                var hash = location.hash;
+                if ($.common.isNotEmpty(hash)) {
+                    var url = hash.substring(1, hash.length);
+                    applyPath(url);
+                }
+            }
+        })
+</script>
+</body>
+</html>

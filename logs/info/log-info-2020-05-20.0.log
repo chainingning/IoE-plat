@@ -1,0 +1,229 @@
+2020-05-20 23:02:35.888 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Starting WxstcGatewayApplication on chaining with PID 9984 (D:\workSpaces\idea\wxstcgateway\target\classes started by ningc in D:\workSpaces\idea\wxstcgateway)
+2020-05-20 23:02:35.908 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - The following profiles are active: druid
+2020-05-20 23:02:38.015 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:02:38.027 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:02:38.034 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-20 23:02:38.035 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-20 23:02:38.039 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2020-05-20 23:02:38.040 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-20 23:02:38.040 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-20 23:02:38.040 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-20 23:02:39.099 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-20 23:02:39.183 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-20 23:02:39.184 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3094 ms
+2020-05-20 23:02:39.517 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-20 23:02:40.231 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-20 23:02:40.736 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:02:40.922 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-20 23:02:41.083 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-05-20 23:02:41.121 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:02:41.151 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:02:41.154 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Started WxstcGatewayApplication in 6.34 seconds (JVM running for 8.355)
+2020-05-20 23:02:42.046 [Thread-21] INFO  com.chaining.iot.nettyserver.netty.NettyServer - Iot started: /0:0:0:0:0:0:0:0:7777
+2020-05-20 23:03:18.934 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x3f3e3693, L:/127.0.0.1:7777 - R:/127.0.0.1:12485] client registered...
+2020-05-20 23:03:18.941 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x3f3e3693, L:/127.0.0.1:7777 - R:/127.0.0.1:12485] connect open
+2020-05-20 23:03:21.015 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x3f3e3693, L:/127.0.0.1:7777 - R:/127.0.0.1:12485]
+2020-05-20 23:03:28.749 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:03:28.749 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:03:28.757 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-05-20 23:04:34.022 [pool-2-thread-2] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x3f3e3693, L:/127.0.0.1:7777 - R:/127.0.0.1:12485]
+2020-05-20 23:04:35.294 [pool-2-thread-2] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x3f3e3693, L:/127.0.0.1:7777 - R:/127.0.0.1:12485]
+2020-05-20 23:05:24.292 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Starting WxstcGatewayApplication on chaining with PID 20804 (D:\workSpaces\idea\wxstcgateway\target\classes started by ningc in D:\workSpaces\idea\wxstcgateway)
+2020-05-20 23:05:24.294 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - The following profiles are active: druid
+2020-05-20 23:05:25.609 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:05:25.622 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:05:25.629 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-20 23:05:25.630 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-20 23:05:25.635 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2020-05-20 23:05:25.636 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-20 23:05:25.636 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-20 23:05:25.636 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-20 23:05:26.713 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-20 23:05:26.814 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-20 23:05:26.815 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2468 ms
+2020-05-20 23:05:27.053 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-20 23:05:27.550 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-20 23:05:27.902 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:05:28.038 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-20 23:05:28.185 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-05-20 23:05:28.222 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:05:28.237 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:05:28.241 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Started WxstcGatewayApplication in 4.539 seconds (JVM running for 6.64)
+2020-05-20 23:05:29.045 [Thread-18] INFO  com.chaining.iot.nettyserver.netty.NettyServer - Iot started: /0:0:0:0:0:0:0:0:7777
+2020-05-20 23:05:30.558 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xadbec0b8, L:/127.0.0.1:7777 - R:/127.0.0.1:12732] client registered...
+2020-05-20 23:05:30.565 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xadbec0b8, L:/127.0.0.1:7777 - R:/127.0.0.1:12732] connect open
+2020-05-20 23:05:31.875 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0xadbec0b8, L:/127.0.0.1:7777 - R:/127.0.0.1:12732]
+2020-05-20 23:05:46.487 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:05:46.488 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:05:46.496 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-05-20 23:06:45.998 [Thread-17] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:06:46.005 [Thread-17] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-05-20 23:08:28.532 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Starting WxstcGatewayApplication on chaining with PID 19400 (D:\workSpaces\idea\wxstcgateway\target\classes started by ningc in D:\workSpaces\idea\wxstcgateway)
+2020-05-20 23:08:28.534 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - The following profiles are active: druid
+2020-05-20 23:08:29.750 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:08:29.763 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:08:29.772 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-20 23:08:29.772 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-20 23:08:29.778 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2020-05-20 23:08:29.779 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-20 23:08:29.779 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-20 23:08:29.779 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-20 23:08:30.832 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-20 23:08:30.923 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-20 23:08:30.923 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2330 ms
+2020-05-20 23:08:31.083 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-20 23:08:31.603 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-20 23:08:31.930 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:08:32.049 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-20 23:08:32.172 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-05-20 23:08:32.201 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:08:32.212 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:08:32.215 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Started WxstcGatewayApplication in 4.238 seconds (JVM running for 5.69)
+2020-05-20 23:08:33.082 [Thread-18] INFO  com.chaining.iot.nettyserver.netty.NettyServer - Iot started: /0:0:0:0:0:0:0:0:7777
+2020-05-20 23:08:35.179 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xbb9df3a5, L:/127.0.0.1:7777 - R:/127.0.0.1:13081] client registered...
+2020-05-20 23:08:35.186 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xbb9df3a5, L:/127.0.0.1:7777 - R:/127.0.0.1:13081] connect open
+2020-05-20 23:08:36.130 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0xbb9df3a5, L:/127.0.0.1:7777 - R:/127.0.0.1:13081]
+2020-05-20 23:08:37.127 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,00,DB,B6,7B] to UNIT_ID:11 CHANNEL: [id: 0xbb9df3a5, L:/127.0.0.1:7777 - R:/127.0.0.1:13081]
+2020-05-20 23:08:43.052 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:08:43.052 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:08:43.060 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2020-05-20 23:08:43.145 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,00,07,E5,7B] to UNIT_ID:11 CHANNEL: [id: 0xbb9df3a5, L:/127.0.0.1:7777 - R:/127.0.0.1:13081]
+2020-05-20 23:08:48.593 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,00,07,E5,7B] to UNIT_ID:11 CHANNEL: [id: 0xbb9df3a5, L:/127.0.0.1:7777 - R:/127.0.0.1:13081]
+2020-05-20 23:10:47.916 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Starting WxstcGatewayApplication on chaining with PID 21172 (D:\workSpaces\idea\wxstcgateway\target\classes started by ningc in D:\workSpaces\idea\wxstcgateway)
+2020-05-20 23:10:47.917 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - The following profiles are active: druid
+2020-05-20 23:10:48.976 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:10:48.998 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:10:49.005 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-20 23:10:49.005 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-20 23:10:49.009 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2020-05-20 23:10:49.009 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-20 23:10:49.009 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-20 23:10:49.009 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-20 23:10:50.067 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-20 23:10:50.147 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-20 23:10:50.147 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2195 ms
+2020-05-20 23:10:50.296 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-20 23:10:50.798 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-20 23:10:51.093 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:10:51.195 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-20 23:10:51.326 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-05-20 23:10:51.358 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:10:51.369 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:10:51.372 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Started WxstcGatewayApplication in 3.908 seconds (JVM running for 5.098)
+2020-05-20 23:10:52.170 [Thread-17] INFO  com.chaining.iot.nettyserver.netty.NettyServer - Iot started: /0:0:0:0:0:0:0:0:7777
+2020-05-20 23:10:56.835 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x258d0f62, L:/127.0.0.1:7777 - R:/127.0.0.1:13328] client registered...
+2020-05-20 23:10:56.842 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x258d0f62, L:/127.0.0.1:7777 - R:/127.0.0.1:13328] connect open
+2020-05-20 23:10:59.219 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x258d0f62, L:/127.0.0.1:7777 - R:/127.0.0.1:13328]
+2020-05-20 23:11:00.216 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,11,B0,7B] to UNIT_ID:11 CHANNEL: [id: 0x258d0f62, L:/127.0.0.1:7777 - R:/127.0.0.1:13328]
+2020-05-20 23:11:02.802 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:11:02.802 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:11:02.808 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-05-20 23:11:02.893 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0x258d0f62, L:/127.0.0.1:7777 - R:/127.0.0.1:13328]
+2020-05-20 23:11:24.746 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0x258d0f62, L:/127.0.0.1:7777 - R:/127.0.0.1:13328]
+2020-05-20 23:11:38.208 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x258d0f62, L:/127.0.0.1:7777 ! R:/127.0.0.1:13328] connect close
+2020-05-20 23:11:40.448 [nioEventLoopGroup-5-2] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334] client registered...
+2020-05-20 23:11:40.448 [nioEventLoopGroup-5-2] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334] connect open
+2020-05-20 23:11:47.502 [pool-2-thread-2] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334]
+2020-05-20 23:11:48.502 [nioEventLoopGroup-5-2] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,11,B0,7B] to UNIT_ID:11 CHANNEL: [id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334]
+2020-05-20 23:11:48.915 [nioEventLoopGroup-5-2] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334]
+2020-05-20 23:12:19.852 [nioEventLoopGroup-5-2] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334]
+2020-05-20 23:12:24.072 [nioEventLoopGroup-5-2] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334]
+2020-05-20 23:12:24.978 [nioEventLoopGroup-5-2] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0xb9e103cf, L:/127.0.0.1:7777 - R:/127.0.0.1:13334]
+2020-05-20 23:12:26.142 [nioEventLoopGroup-5-2] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xb9e103cf, L:/127.0.0.1:7777 ! R:/127.0.0.1:13334] connect close
+2020-05-20 23:12:29.144 [nioEventLoopGroup-5-3] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x0b968fc3, L:/127.0.0.1:7777 - R:/127.0.0.1:13353] client registered...
+2020-05-20 23:12:29.145 [nioEventLoopGroup-5-3] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x0b968fc3, L:/127.0.0.1:7777 - R:/127.0.0.1:13353] connect open
+2020-05-20 23:12:30.535 [pool-2-thread-3] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x0b968fc3, L:/127.0.0.1:7777 - R:/127.0.0.1:13353]
+2020-05-20 23:12:31.534 [nioEventLoopGroup-5-3] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,11,B0,7B] to UNIT_ID:11 CHANNEL: [id: 0x0b968fc3, L:/127.0.0.1:7777 - R:/127.0.0.1:13353]
+2020-05-20 23:12:32.852 [nioEventLoopGroup-5-3] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0x0b968fc3, L:/127.0.0.1:7777 - R:/127.0.0.1:13353]
+2020-05-20 23:12:38.894 [nioEventLoopGroup-5-3] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x0b968fc3, L:/127.0.0.1:7777 ! R:/127.0.0.1:13353] connect close
+2020-05-20 23:25:09.414 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Starting WxstcGatewayApplication on chaining with PID 20992 (D:\workSpaces\idea\wxstcgateway\target\classes started by ningc in D:\workSpaces\idea\wxstcgateway)
+2020-05-20 23:25:09.415 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - The following profiles are active: druid
+2020-05-20 23:25:10.635 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:25:10.659 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:25:10.667 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-20 23:25:10.667 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-20 23:25:10.672 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2020-05-20 23:25:10.672 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-20 23:25:10.673 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-20 23:25:10.673 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-20 23:25:11.726 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-20 23:25:11.808 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-20 23:25:11.808 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2354 ms
+2020-05-20 23:25:11.979 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-20 23:25:12.529 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-20 23:25:12.822 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:25:12.923 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-20 23:25:13.047 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-05-20 23:25:13.079 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:25:13.090 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:25:13.093 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Started WxstcGatewayApplication in 4.146 seconds (JVM running for 5.663)
+2020-05-20 23:25:13.906 [Thread-18] INFO  com.chaining.iot.nettyserver.netty.NettyServer - Iot started: /0:0:0:0:0:0:0:0:7777
+2020-05-20 23:25:17.363 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xfba1400f, L:/127.0.0.1:7777 - R:/127.0.0.1:13857] client registered...
+2020-05-20 23:25:17.370 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xfba1400f, L:/127.0.0.1:7777 - R:/127.0.0.1:13857] connect open
+2020-05-20 23:25:20.427 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0xfba1400f, L:/127.0.0.1:7777 - R:/127.0.0.1:13857]
+2020-05-20 23:25:21.424 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,11,B0,7B] to UNIT_ID:11 CHANNEL: [id: 0xfba1400f, L:/127.0.0.1:7777 - R:/127.0.0.1:13857]
+2020-05-20 23:25:24.207 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:25:24.208 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:25:24.214 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-05-20 23:25:24.293 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0xfba1400f, L:/127.0.0.1:7777 - R:/127.0.0.1:13857]
+2020-05-20 23:25:47.531 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0xfba1400f, L:/127.0.0.1:7777 - R:/127.0.0.1:13857]
+2020-05-20 23:26:10.209 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0xfba1400f, L:/127.0.0.1:7777 ! R:/127.0.0.1:13857] connect close
+2020-05-20 23:26:56.990 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Starting WxstcGatewayApplication on chaining with PID 19036 (D:\workSpaces\idea\wxstcgateway\target\classes started by ningc in D:\workSpaces\idea\wxstcgateway)
+2020-05-20 23:26:56.991 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - The following profiles are active: druid
+2020-05-20 23:26:58.062 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:26:58.073 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:26:58.079 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-20 23:26:58.080 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-20 23:26:58.084 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2020-05-20 23:26:58.085 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-20 23:26:58.085 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-20 23:26:58.085 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-20 23:26:59.148 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-20 23:26:59.231 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-20 23:26:59.232 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2204 ms
+2020-05-20 23:26:59.393 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-20 23:26:59.913 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-20 23:27:00.220 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:27:00.326 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-20 23:27:00.458 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-05-20 23:27:00.490 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:27:00.502 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:27:00.504 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Started WxstcGatewayApplication in 4.021 seconds (JVM running for 5.238)
+2020-05-20 23:27:01.255 [Thread-18] INFO  com.chaining.iot.nettyserver.netty.NettyServer - Iot started: /0:0:0:0:0:0:0:0:7777
+2020-05-20 23:27:03.588 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x9660b443, L:/127.0.0.1:7777 - R:/127.0.0.1:14100] client registered...
+2020-05-20 23:27:03.595 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x9660b443, L:/127.0.0.1:7777 - R:/127.0.0.1:14100] connect open
+2020-05-20 23:27:04.946 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x9660b443, L:/127.0.0.1:7777 - R:/127.0.0.1:14100]
+2020-05-20 23:27:04.948 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,11,B0,7B] to UNIT_ID:11 CHANNEL: [id: 0x9660b443, L:/127.0.0.1:7777 - R:/127.0.0.1:14100]
+2020-05-20 23:27:12.432 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-05-20 23:27:12.433 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-05-20 23:27:12.439 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2020-05-20 23:27:12.517 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,87,00,09,01,01,89,E9,7B] to UNIT_ID:11 CHANNEL: [id: 0x9660b443, L:/127.0.0.1:7777 - R:/127.0.0.1:14100]
+2020-05-20 23:29:08.903 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Starting WxstcGatewayApplication on chaining with PID 2676 (D:\workSpaces\idea\wxstcgateway\target\classes started by ningc in D:\workSpaces\idea\wxstcgateway)
+2020-05-20 23:29:08.904 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - The following profiles are active: druid
+2020-05-20 23:29:09.953 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2020-05-20 23:29:09.963 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:29:09.970 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-05-20 23:29:09.970 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2020-05-20 23:29:09.975 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.21]
+2020-05-20 23:29:09.975 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2020-05-20 23:29:09.975 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-05-20 23:29:09.976 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-05-20 23:29:11.036 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2020-05-20 23:29:11.115 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-05-20 23:29:11.115 [restartedMain] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2173 ms
+2020-05-20 23:29:11.274 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-05-20 23:29:11.779 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-05-20 23:29:12.066 [restartedMain] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-20 23:29:12.175 [restartedMain] INFO  o.s.b.a.web.servlet.WelcomePageHandlerMapping - Adding welcome page template: index
+2020-05-20 23:29:12.315 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2020-05-20 23:29:12.347 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2020-05-20 23:29:12.358 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2020-05-20 23:29:12.361 [restartedMain] INFO  com.chaining.iot.WxstcGatewayApplication - Started WxstcGatewayApplication in 3.982 seconds (JVM running for 5.222)
+2020-05-20 23:29:13.223 [Thread-17] INFO  com.chaining.iot.nettyserver.netty.NettyServer - Iot started: /0:0:0:0:0:0:0:0:7777
+2020-05-20 23:29:16.059 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x2a132218, L:/127.0.0.1:7777 - R:/127.0.0.1:14350] client registered...
+2020-05-20 23:29:16.067 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x2a132218, L:/127.0.0.1:7777 - R:/127.0.0.1:14350] connect open
+2020-05-20 23:29:16.961 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x2a132218, L:/127.0.0.1:7777 - R:/127.0.0.1:14350]
+2020-05-20 23:29:16.964 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,11,B0,7B] to UNIT_ID:11 CHANNEL: [id: 0x2a132218, L:/127.0.0.1:7777 - R:/127.0.0.1:14350]
+2020-05-20 23:29:19.038 [pool-2-thread-1] INFO  c.c.iot.nettyserver.process.ReceiveProcessTask - bind unitId:11 to channel:[id: 0x2a132218, L:/127.0.0.1:7777 - R:/127.0.0.1:14350]
+2020-05-20 23:29:19.038 [nioEventLoopGroup-5-1] INFO  com.chaining.iot.nettyserver.handler.EncodeHandler - Send HEX DATA:[7B,81,00,07,11,B0,7B] to UNIT_ID:11 CHANNEL: [id: 0x2a132218, L:/127.0.0.1:7777 - R:/127.0.0.1:14350]
+2020-05-20 23:29:23.424 [nioEventLoopGroup-5-1] INFO  c.c.iot.nettyserver.handler.NettyServerHandler - [id: 0x2a132218, L:/127.0.0.1:7777 ! R:/127.0.0.1:14350] connect close

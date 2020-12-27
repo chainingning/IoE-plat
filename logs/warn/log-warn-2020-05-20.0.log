@@ -1,0 +1,7 @@
+2020-05-20 23:02:40.433 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-20 23:05:27.689 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-20 23:08:31.729 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-20 23:10:50.916 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-20 23:25:12.649 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-20 23:27:00.035 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
+2020-05-20 23:29:11.897 [restartedMain] WARN  c.b.mybatisplus.core.toolkit.TableInfoHelper - Warn: Could not find @TableId in Class: com.chaining.iot.webserver.domain.Menu.
