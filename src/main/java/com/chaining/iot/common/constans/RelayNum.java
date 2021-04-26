@@ -2,28 +2,37 @@ package com.chaining.iot.common.constans;
 
 /**
  * 继电器枚举
+ *
  * @author ningc
  */
-public class RelayNum{
+public class RelayNum {
     /**
      * 执行的动作
      */
-    public enum ActionEnum{
-        /**暂停 */
+    public enum ActionEnum {
+        /**
+         * 暂停
+         */
         PAUSE(2),
-        /**开启 */
+        /**
+         * 开启
+         */
         NO(1),
-        /**关闭 */
-        OFF(0)
-        ;
+        /**
+         * 关闭
+         */
+        OFF(0);
 
         private int value;
+
         ActionEnum(int value) {
             this.value = value;
         }
+
         public int getValue() {
             return this.value;
         }
+
         public static ActionEnum toEnumValue(int value) {
             for (ActionEnum e : values()) {
                 if (e.getValue() == (value)) {
@@ -33,10 +42,11 @@ public class RelayNum{
             return null;
         }
     }
+
     /**
      * 继电器编号
      */
-    public enum RelayNumEnum{
+    public enum RelayNumEnum {
         /**
          * 房门
          */
@@ -64,8 +74,7 @@ public class RelayNum{
         /**
          * 预留继电器接口
          */
-        BACKUP_RELAY(7)
-        ;
+        BACKUP_RELAY(7);
         private int value;
 
         RelayNumEnum(int value) {
@@ -79,6 +88,7 @@ public class RelayNum{
         public void setValue(int value) {
             this.value = value;
         }
+
         public static RelayNumEnum toEnumValue(int value) {
             for (RelayNumEnum e : values()) {
                 if (e.getValue() == (value)) {
@@ -87,6 +97,7 @@ public class RelayNum{
             }
             return null;
         }
+
         public static boolean codeOf(int value) {
             for (RelayNumEnum d : values()) {
                 if (d.getValue() == (value)) {
